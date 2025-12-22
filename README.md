@@ -112,6 +112,26 @@ Proceed to remove 5 revisions? [y/N]: n
 Aborted. No changes made.
 ```
 
+```
+eakyuez@ubuntu:~$ sudo ./snapman 
+[sudo: authenticate] Password: 
+SnapMan starting...
+
+Found 1 disabled revisions. Potential gain: 346.76 MB
+
+PACKAGE                 VERSION   REV   SIZE        STATUS
+-------                 -------   ---   ----        ------
+wine-platform-runtime   v1.0      400   346.76 MB   Ready
+
+Proceed to remove 1 revisions? [y/N]: y
+Removed wine-platform-runtime (revision 400) [346.76 MB]
+
+Summary: removed 1, skipped (missing) 0, reclaimed 346.76 MB.
+
+Operation Complete.
+```
+
+
 ## 📂 Project Structure
 
 This project follows the Standard Go Project Layout to ensure maintainability.
